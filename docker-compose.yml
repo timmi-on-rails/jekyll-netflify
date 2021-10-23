@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   jekyll:
-    image: jekyll/jekyll:4.2.0
-    command: [ "bash", "-c", "npm ci && jekyll serve --livereload --force_polling" ]
+    build: .
+    command: [ "sh", "-c", "npm ci && bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling" ]
     ports:
       - 4000:4000
       - 35729:35729
