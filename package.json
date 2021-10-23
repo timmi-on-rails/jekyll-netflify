@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "windicss": "windicss './_site/**/*.html' -to ./_site/windi.min.css --minify"
+  },
+  "dependencies": {
+    "windicss": "^3.1.9"
+  }
+}
